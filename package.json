@@ -1,0 +1,31 @@
+{
+  "name": "deploy-network",
+  "version": "1.0.0",
+  "description": "Automatización de, despliegue de las CAs de las organizaciones así como los peer iniciales.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "mocha --require @babel/register 'test/**/*.test.mjs'",
+    "coverage": "nyc mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "fabric-ca-client": "^2.2.20",
+    "js-yaml": "^4.1.0",
+    "reflect-metadata": "^0.2.2",
+    "typedi": "^0.10.0"
+  },
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "mocha": "^10.7.3",
+    "nodemon": "^3.1.4",
+    "nyc": "^17.0.0"
+  }
+}
